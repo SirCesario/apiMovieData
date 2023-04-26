@@ -9,6 +9,7 @@ import java.util.List;
 public interface PeliculaRepository  extends JpaRepository <Pelicula, Long> {
 
     List<Pelicula> findByGenero(String genero);
-    List<Pelicula> findByFechaEstreno(Date fechaInicio, Date fechaFin);
+    List<Pelicula> findByFechaEstrenoBetween(Date fechaInicio, Date fechaFin);
+
 
 }
